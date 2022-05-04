@@ -1,0 +1,25 @@
+{
+  "name": "lernen-mit-videos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LarsStiegmann/Lernen-mit-Videos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LarsStiegmann/Lernen-mit-Videos/issues"
+  },
+  "homepage": "https://github.com/LarsStiegmann/Lernen-mit-Videos#readme",
+  "dependencies": {
+    "better-sqlite3": "^7.5.1",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1"
+  }
+}
