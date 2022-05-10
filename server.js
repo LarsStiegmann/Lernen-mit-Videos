@@ -26,7 +26,31 @@ app.get("/LernenMitVideos", function(req, res)
 });
 
 //Aufruf vom Login
-app.get("/login", function(req, res)
+app.get("/Login", function(req, res)
 {
     res.sendFile(__dirname + "/views/loginformular.html")
+});
+
+//Aufruf der Hauptseite
+app.get("/Hauptseite", function(req, res)
+{
+    res.sendFile(__dirname + "/views/Hauptseite.html")
+});
+
+//Aufruf von Thema1
+app.get("/BinomischeFormeln", function(req, res)
+{
+    res.sendFile(__dirname + "/views/Thema1.html")
+});
+
+//Aufruf von Thema2
+app.get("/Thema2", function(req, res)
+{
+    res.sendFile(__dirname + "/views/Thema2.html")
+});
+
+//Aufruf von Thema3
+app.get("/Thema3", function(req, res)
+{
+    res.sendFile(__dirname + "/views/Thema3.html")
 });
