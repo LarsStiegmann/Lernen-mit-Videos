@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 app.use(express.urlencoded({extended: true}))
 
-app.use(express.static(__dirname + "/images"));
+app.use(express.static(__dirname + "/public"));
 
 // EJS
 app.engine(".ejs", require("ejs").__express);
@@ -44,13 +44,13 @@ app.get("/BinomischeFormeln", function(req, res)
 });
 
 //Aufruf von Thema2
-app.get("/Thema2", function(req, res)
+app.get("/QuadratischeFunktionen", function(req, res)
 {
     res.sendFile(__dirname + "/views/Thema2.html")
 });
 
 //Aufruf von Thema3
-app.get("/Thema3", function(req, res)
+app.get("/SatzDesPythagoras", function(req, res)
 {
     res.sendFile(__dirname + "/views/Thema3.html")
 });
