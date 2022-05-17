@@ -31,6 +31,12 @@ app.get("/Login", function(req, res)
     res.sendFile(__dirname + "/views/loginformular.html")
 });
 
+//Aufruf der Registrierung
+app.get("/Registrierung", function(req, res)
+{
+    res.sendFile(__dirname + "/views/Registrierung.html")
+});
+
 //Aufruf der Hauptseite
 app.get("/Hauptseite", function(req, res)
 {
