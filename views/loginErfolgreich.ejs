@@ -5,41 +5,26 @@
         <style>
             body {
                 font-family: sans-serif;
-            }
-           form {
                 width: 90%;
-                background-color: white;
                 margin: 0 auto;
-                padding: 10em 40em;
+                padding: 0 30em;
             }
-            form label {
-                display: block;
-                font-size: 1em;
-                color: darkslategrey;
-                padding-left: 3px;    
+            a {
+                color: blue;
             }
-            button[type=submit] {
-                background-color: grey;
-                cursor: pointer;
-                width: 14em;
-                padding: .3em 0;
-                border-radius: 0.7em;
+            a:visited {
+                color: blueviolet;
             }
-
-            button[type=submit]:hover {
-                background-color: greenyellow;
-                box-shadow: 2px 2px 2px grey;
+            a:hover {
+                color: red;
             }
-
-
+            a:active {
+                color: greenyellow;
+            }
         </style>
     </head>
     <body>
-        <p> Willkommen <%= benutzername%>.</p>
-        <h2>Menü</h2>
-    </body>
-    <body>
-            <br>
+        <h2> Willkommen <%= benutzername%>.</h2>
             <a href = /Hauptseite> Hier geht es Weiter!</a>
     </body>
 </html>
